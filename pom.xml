@@ -26,6 +26,7 @@
     </dependencies>
 
     <build>
+        <finalName>SpringBootDockerTest.jar</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
