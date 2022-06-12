@@ -11,7 +11,7 @@ public class BranchController {
 
     @GetMapping("branch")
     public String getBranch() {
-        return "branch: jenkins-test/v1.0/JIRA-1/feature-1";
+        return "branch: jenkins-test/v1.0/JIRA-2/feature-2";
     }
 
 }
