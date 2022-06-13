@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    parameters {
+    parameter {
         choice(name: 'SELECT_VERSION', choices: ['v1.0', 'v1.1'], description: 'select target version')
         booleanParam(name: 'TEST_FLAG', defaultValue: true, description: 'test flag')
     }
