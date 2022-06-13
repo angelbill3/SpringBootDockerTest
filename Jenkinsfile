@@ -13,7 +13,7 @@ pipeline {
         stage("test") {
             when {
                 expression {
-                    param.TEST_FLAG == true
+                    params.TEST_FLAG == true
                 }
             }
             steps {
@@ -23,7 +23,7 @@ pipeline {
         stage("deploy") {
             steps {
                 echo 'deploying the application...'
-                echo "deploying the version with: ${param.SELECT_VERSION}"
+                echo "deploying the version with: ${params.SELECT_VERSION}"
             }
         }
     }
